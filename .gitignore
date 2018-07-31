@@ -1,0 +1,16 @@
+.DS_STORE
+.vagrant
+.npmrc
+.dir-locals.el
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.idea
+*.iml
+.vscode
+!keep
+node_modules
+*.log
+.env
