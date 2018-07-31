@@ -3,7 +3,7 @@ Description=Process impressions to extract entities
 
 [Service]
 User=tracking
-WorkingDirectory=~/facebook-tracking-exposed
+WorkingDirectory=~/facebook.tracking.exposed
 ExecStart=node_modules/.bin/processorctl start -s impressions -p @tracking-exposed/process-entities -S entities
 
 [Install]
