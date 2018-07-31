@@ -1,0 +1,6 @@
+[Unit]
+Description=Tracking Exposed for Facebook
+Requires=multi-user.target redis.service mongodb.service
+Conflicts=rescue.service rescue.target
+After=multi-user.target mongodb.service redis.service rescue.service rescue.target
+AllowIsolate=yes

@@ -1,0 +1,11 @@
+[Unit]
+Description=Fetch impressions from the collector
+
+[Service]
+Type=oneshot
+User=tracking
+WorkingDirectory=~/facebook-tracking-exposed/scripts/fetch-impressions-to-stream.js
+ExecStart=/usr/bin/letsencrypt renew --post-hook "systemctl restart nginx"
+
+[Install]
+WantedBy=facebook-tracking-exposed.target
