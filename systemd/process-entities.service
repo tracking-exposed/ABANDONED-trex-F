@@ -6,7 +6,7 @@ Type=simple
 User=tracking
 EnvironmentFile=/home/tracking/Environment
 WorkingDirectory=/home/tracking/facebook.tracking.exposed
-ExecStart=/home/tracking/facebook.tracking.exposed/bin/process-rss
+ExecStart=/home/tracking/facebook.tracking.exposed/bin/process-entities
 Restart=on-failure
 
 [Install]
