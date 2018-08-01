@@ -2,6 +2,12 @@
 /**
  * This script requires 
  */
+process.on("unhandledRejection", up => {
+  console.log("Unhandled Exception");
+  console.log(up);
+  process.exit(1);
+});
+
 const fetch = require("isomorphic-fetch");
 
 const {mongo, redis, impressions} = require("@tracking-exposed/data");
