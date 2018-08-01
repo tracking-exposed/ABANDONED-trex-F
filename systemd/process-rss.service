@@ -3,8 +3,8 @@ Description=Process entities to generate RSS feeds
 
 [Service]
 User=tracking
-WorkingDirectory=~/facebook.tracking.exposed
-ExecStart=node_modules/.bin/processorctl start -s entities -p @tracking-exposed/process-rss
+WorkingDirectory=%h/facebook.tracking.exposed
+ExecStart=%h/facebook.tracking.exposed/node_modules/.bin/processorctl start -s entities -p @tracking-exposed/process-rss
 
 [Install]
 WantedBy=facebook-tracking-exposed.target
