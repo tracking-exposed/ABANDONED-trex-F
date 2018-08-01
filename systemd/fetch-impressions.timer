@@ -3,7 +3,7 @@ Description=Fetch impressions from the collector
 
 [Timer]
 OnBootSec=60
-OnUnitActiveSec=minutely
+OnCalendar=*:0/1
 
 [Install]
 WantedBy=facebook-tracking-exposed.target
