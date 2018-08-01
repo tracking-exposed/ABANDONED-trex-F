@@ -2,12 +2,9 @@
 /**
  * This script requires 
  */
-const dotenv = require("dotenv");
 const fetch = require("isomorphic-fetch");
 
 const {mongo, redis, impressions} = require("@tracking-exposed/data");
-
-dotenv.config();
 
 const pass = process.env.TREX_LEGACY_API_PASSWORD;
 const now = Math.floor(new Date().getTime() / 1000);

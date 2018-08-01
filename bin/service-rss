@@ -1,0 +1,3 @@
+#!/bin/sh
+
+"$(/usr/bin/npm bin)"/servicesctl start -s @tracking-exposed/service-rss 2>&1 | tee -a "$TREX_LOG_DIR"/service-rss.log

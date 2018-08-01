@@ -1,0 +1,3 @@
+#!/bin/sh
+
+"$(/usr/bin/npm bin)"/processorctl start -s entities -p @tracking-exposed/process-rss 2>&1 | tee -a "$TREX_LOG_DIR"/process-rss.log

@@ -2,6 +2,11 @@
 
 The implementation of Tracking Exposed for Facebook.
 
+Place an environment file in `/home/tracking/Environment` that contains the following keys:
+
+- TREX_LOG_DIR
+- TREX_LEGACY_API_PASSWORD
+
 ## Scripts
 
 ### `scripts/fetch-impressions-to-stream.js`

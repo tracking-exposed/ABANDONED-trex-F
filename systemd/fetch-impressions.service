@@ -4,8 +4,9 @@ Description=Fetch impressions from the collector
 [Service]
 Type=oneshot
 User=tracking
-WorkingDirectory=%h/facebook.tracking.exposed
-ExecStart=%h/scripts/fetch-impressions-to-stream.js
+EnvironmentFile=/home/tracking/Environment
+WorkingDirectory=/home/tracking/facebook.tracking.exposed
+ExecStart=/home/tracking/facebook.tracking.exposed/scripts/fetch-impressions-to-stream.js
 
 [Install]
 WantedBy=facebook-tracking-exposed.target

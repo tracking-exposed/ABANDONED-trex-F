@@ -13,6 +13,5 @@
 !keep
 node_modules
 *.log
-.env
 .services.json
 .processor.json

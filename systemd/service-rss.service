@@ -1,11 +1,14 @@
 [Unit]
 Description=Service RSS feeds for entities
+After=network.target
 
 [Service]
+Type=simple
 User=tracking
-WorkingDirectory=~/facebook.tracking.exposed
-ExecStart=/home/tracking/facebook.tracking.exposed/node_modules/.bin/servicesctl start -s @tracking-exposed/service-rss
-Restart=always
+EnvironmentFile=/home/tracking/Environment
+WorkingDirectory=/home/tracking/facebook.tracking.exposed
+ExecStart=/home/tracking/facebook.tracking.exposed/bin/service-rss
+Restart=on-failure
 
 [Install]
 WantedBy=facebook-tracking-exposed.target
