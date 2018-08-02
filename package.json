@@ -9,12 +9,13 @@
     "lint": "eslint scripts/*.js"
   },
   "dependencies": {
-    "@tracking-exposed/data": "0.5.0",
-    "@tracking-exposed/process-entities": "0.5.0",
-    "@tracking-exposed/process-rss": "0.5.0",
-    "@tracking-exposed/processor-cli": "0.5.0",
-    "@tracking-exposed/service-rss": "0.5.0",
-    "@tracking-exposed/services-cli": "0.5.0",
+    "@tracking-exposed/data": "0.6.0",
+    "@tracking-exposed/process-entities": "0.6.0",
+    "@tracking-exposed/process-rss": "0.6.0",
+    "@tracking-exposed/processor-cli": "0.6.0",
+    "@tracking-exposed/service-rss": "0.6.0",
+    "@tracking-exposed/services-cli": "0.6.0",
+    "@tracking-exposed/widget-rss-feeds": "0.6.0",
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
