@@ -42,8 +42,10 @@ const mongoUri = `mongodb://${mongoHost}:${mongoPort}/${mongoDb}`;
         },
       );
       console.log(impression);
-      await impressions.store(mongoClient, impression);
-      await redis.publishToStream(redisClient, "impressions", {impressionId});
+      await Promise.all([
+        impressions.store(mongoClient, impression),
+        redis.publishToStream(redisClient, "impressions", {impressionId}),
+      ]);
     }),
   );
 
