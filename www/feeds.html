@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Widget RSS Feed Generation</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css">
+  <link rel="stylesheet" href="bundle/index.css" />
+</head>
+<body>
+  <div class="preview">
+    <script type="text/props">
+      {"recipient": "You"}
+    </script>
+  </div>
+  <script src="bundle/index.js"></script>
+  <script>
+    var render = bundle.default;
+    fetch("all-entities.json")
+      .then(resp => resp.json())
+      .then(data =>
+        render({
+          selector: ".preview",
+          defaultProps: {baseUrl: "https://facebook.tracking.exposed/feeds", allEntities: data},
+          inline: false,
+          clean: false,
+          clientSpecified: false
+        })
+      );
+  </script>
+</body>
+</html>
