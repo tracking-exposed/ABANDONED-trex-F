@@ -634,62 +634,66 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@tracking-exposed/data@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@tracking-exposed/data/-/data-0.5.0.tgz#797dc0195c1168c589e4610e70066fd68dae4116"
+"@tracking-exposed/data@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@tracking-exposed/data/-/data-0.7.0.tgz#f130db4e789dd526f3e24212b554d2cf1dfcba9a"
   dependencies:
     ioredis "^3.2.2"
     mongodb "^3.0.10"
     rss "^1.2.2"
 
-"@tracking-exposed/process-entities@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@tracking-exposed/process-entities/-/process-entities-0.5.0.tgz#107121ac178b8174d7b4d8829ca947e4614838fd"
+"@tracking-exposed/process-entities@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@tracking-exposed/process-entities/-/process-entities-0.7.0.tgz#65ff9b0c56bef19bfa748d97d38e3c9b29ae52f1"
   dependencies:
-    "@tracking-exposed/data" "0.5.0"
+    "@tracking-exposed/data" "0.7.0"
     isomorphic-fetch "^2.2.1"
 
-"@tracking-exposed/process-rss@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@tracking-exposed/process-rss/-/process-rss-0.5.0.tgz#d2771a148de1c8f57d77c63f81865bb28911d2ab"
+"@tracking-exposed/process-rss@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@tracking-exposed/process-rss/-/process-rss-0.7.0.tgz#9c49a6033ae85871c50cf9a44714c48d42819801"
   dependencies:
-    "@tracking-exposed/data" "0.5.0"
-    "@tracking-exposed/utils" "0.5.0"
+    "@tracking-exposed/data" "0.7.0"
+    "@tracking-exposed/utils" "0.7.0"
     rss "^1.2.2"
 
-"@tracking-exposed/processor-cli@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@tracking-exposed/processor-cli/-/processor-cli-0.5.0.tgz#f645703caa6f3d3dea5dbc90093cd494e0461a23"
+"@tracking-exposed/processor-cli@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@tracking-exposed/processor-cli/-/processor-cli-0.7.0.tgz#c968b3b2c7c04ca9dc31f41c03cd935ad3c74604"
   dependencies:
-    "@tracking-exposed/data" "0.5.0"
-    "@tracking-exposed/utils" "0.5.0"
+    "@tracking-exposed/data" "0.7.0"
+    "@tracking-exposed/utils" "0.7.0"
     find-up "^3.0.0"
     ioredis "^3.2.2"
     mongodb "^3.0.10"
     yargs "^11.0.0"
 
-"@tracking-exposed/service-rss@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@tracking-exposed/service-rss/-/service-rss-0.5.0.tgz#a10ea5df10c400ee37c183d1ce6f89dcc9351298"
+"@tracking-exposed/service-rss@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@tracking-exposed/service-rss/-/service-rss-0.7.0.tgz#f3653b91d90fae01555ccb15e7c661d3505cba07"
   dependencies:
-    "@tracking-exposed/data" "0.5.0"
-    "@tracking-exposed/utils" "0.5.0"
+    "@tracking-exposed/data" "0.7.0"
+    "@tracking-exposed/utils" "0.7.0"
     micro "^9.3.2"
 
-"@tracking-exposed/services-cli@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@tracking-exposed/services-cli/-/services-cli-0.5.0.tgz#f5255edaeb75d2a821498ef8525a9c19ce7052b2"
+"@tracking-exposed/services-cli@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@tracking-exposed/services-cli/-/services-cli-0.7.0.tgz#c44c4675ff9d8a699d785add0dec61727585021a"
   dependencies:
-    "@tracking-exposed/utils" "0.5.0"
+    "@tracking-exposed/utils" "0.7.0"
     find-up "^3.0.0"
     micro "^9.3.2"
     yargs "^12.0.1"
 
-"@tracking-exposed/utils@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@tracking-exposed/utils/-/utils-0.5.0.tgz#7712382d0a9c345245907d7063f98ec9357deef5"
+"@tracking-exposed/utils@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@tracking-exposed/utils/-/utils-0.7.0.tgz#45e0b7faac8e475081bdb446fd9b3cc95f5f468f"
   dependencies:
     date-fns "^1.29.0"
+
+"@tracking-exposed/widget-rss-feeds@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@tracking-exposed/widget-rss-feeds/-/widget-rss-feeds-0.7.0.tgz#f2c3f722f81ede64c25b0bc732935fe47970949f"
 
 abbrev@1:
   version "1.1.1"
@@ -1269,10 +1273,6 @@ doctrine@^2.1.0:
   resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-2.1.0.tgz#5cd01fc101621b42c4cd7f5d1a66243716d3f39d"
   dependencies:
     esutils "^2.0.2"
-
-dotenv@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.0.0.tgz#24e37c041741c5f4b25324958ebbc34bca965935"
 
 electron-to-chromium@^1.3.47:
   version "1.3.52"
