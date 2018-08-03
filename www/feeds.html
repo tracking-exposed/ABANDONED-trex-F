@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Widget RSS Feed Generation</title>
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css">
-  <link rel="stylesheet" href="bundle/index.css" />
-</head>
-<body>
-  <div class="preview">
-    <script type="text/props">
-      {"recipient": "You"}
-    </script>
-  </div>
-  <script src="bundle/index.js"></script>
-  <script>
-    var render = bundle.default;
-    fetch("all-entities.json")
-      .then(resp => resp.json())
-      .then(data =>
+  <head>
+    <link rel="stylesheet" href="https://facebook.tracking.exposed/css/bootstrap.css">
+    <link rel="stylesheet" href="https://facebook.tracking.exposed/css/index.css">
+    <script type="text/javascript" src="https://facebook.tracking.exposed/js/lodash.min.js"></script>
+    <script type="text/javascript" src="https://facebook.tracking.exposed/js/jquery.js"></script>
+    <script type="text/javascript" src="https://facebook.tracking.exposed/js/collapse.js"></script>
+    <script type="text/javascript" src="https://facebook.tracking.exposed/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="facebook tracking exposed">
+    <meta property="og:title" content="facebook.tracking.exposed">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Facebook Tracking Exposed is a web browser addon that collects the stories visible in your Facebook News feed and a website that aggregates that data from all the users who have the addon installed. Our vision is to increase transparency behind personalization algorithms">
+    <meta property="og:url" content="https://facebook.tracking.exposed">
+    <meta property="og:image" content="https://facebook.tracking.exposed/images/fbtrex_logo-400x400.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <title>facebook tracking exposed</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css">
+    <link rel="stylesheet" href="bundle/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topheader">
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"><span>< <img class="githublogo" src="https://facebook.tracking.exposed/images/github-256.png"><a href="https://github.com/tracking-exposed/web-extension">browser extension</a>, <a href="https://github.com/tracking-exposed/facebook">backend</a> /> </span></div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-right"><img class="fbtrexlogo" alt="logo of fbtrex" src="https://facebook.tracking.exposed/images/fbtrex_logo.svg"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><a href="https://facebook.tracking.exposed/">
+            <h2><span class="blue">facebook</span>.<span class="orange">tracking</span>.<span class="green">exposed</span></h2></a></div>
+      </div>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#thenavbar" aria-expanded="false"><span id="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="thenavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="https://facebook.tracking.exposed/">Home</a></li>
+            <li><a href="https://facebook.tracking.exposed/initiatives/">Results</a></li>
+            <li><a href="https://facebook.tracking.exposed/privacy-statement">Privacy </a></li>
+            <li><a href="https://facebook.tracking.exposed/project">The Project </a></li>
+            <li><a href="https://facebook.tracking.exposed/impact/">Stats</a></li>
+            <li><a href="https://facebook.tracking.exposed/about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="preview">
+          <script type="text/props">
+            {"recipient": "You"}
+          </script>
+        </div>
+      </div>
+    </div>
+    <script src="bundle/index.js"></script>
+    <script>
+      var render = bundle.default;
+      fetch("all-entities.json")
+  .then(resp => resp.json())
+  .then(data =>
         render({
           selector: ".preview",
           defaultProps: {baseUrl: "https://facebook.tracking.exposed/feeds", allEntities: data},
@@ -26,7 +70,7 @@
           clean: false,
           clientSpecified: false
         })
-      );
-  </script>
-</body>
+       );
+    </script>
+  </body>
 </html>
